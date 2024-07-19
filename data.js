@@ -22,7 +22,7 @@ let todos = [
         title: "Narnia",
         popularity: 4,
     },
-   
+
 ];
 
 //second parameter
@@ -52,10 +52,11 @@ function updateTodo(todos, id, title, popularity) {
 
 function deleteTodo(todos, id) {
     //use splice to delete an item from an array
-    const index = todos.findIndex(function(){
+    const index = todos.findIndex(function(t){
         return t.id === id;
     });
     console.log(index);
+    todos.splice(index, 25);
 }
 
 // - ADD -
@@ -68,4 +69,7 @@ updateTodo(todos, 1, "Benhur", 4);
 console.log("---- after changing todo with id 1 to Benhur ----")
 console.log(todos);
 
+// - DELETE -
 deleteTodo(todos, 25);
+console.log("---- after deleting todo with id 25");
+console.log(todos);
