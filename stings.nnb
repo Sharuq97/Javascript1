@@ -1,0 +1,189 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "* how to create a string\nlet word = \"Apple Pie\"\nlet mrt = 'Yishun'\nlet sentence = \"My name is Billa\" \nlet quote = 'Mala da Annaamalai'"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//easiest way to mix single and double code is to escape them\n// escape \"\\\"\n'Annamalai says,\"I wouldn\\'t kill Billa\"'\n//There is a \\ near woudnt so that the aprostaphee doesnt mix up with single quotation string."
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "\u001b[32m`Annamalai says,\"I wouldn't kill Billa\"`\u001b[39m"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//another example\nconsole.log(\"Dear Sir,Thanks for granting me leave\")\n// in this case if you want to put up a enter(next line gap after the \"dear sir\") or\n//if yu want to give paragraph spacing, you have to use \\n or \\t... Example\nconsole.log(\"Dear sir,\\nThanks for granting me leave\")\n//using \\t looks like\nconsole.log(\"Dear Sir,\\n\\tThanks for granting me leave\")\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Dear Sir,Thanks for granting me leave",
+                                "Dear Sir,",
+                                "\tThanks for granting me leave",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "1. # String literals\n2. Available since ES6 (2015)\n3. Define strings that contain special characters"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let passage = `Dear sir,\n\n    Please have fun \n    Thanks\n\n            Have fun da vendru\n    Regards\n        Sharuq\n\n`\nconsole.log(passage)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Dear sir,",
+                                "",
+                                "    Please have fun ",
+                                "    Thanks",
+                                "",
+                                "            Have fun da vendru",
+                                "    Regards",
+                                "        Sharuq",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//negative example will not work\n//why? becoz the expression will not evaluate to value\nlet bmi = 17.1\nlet a = ``"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "function getWeightStatus(bmi){\n    if (bmi < 18.5){\n        return \"underweight\";\n    } else if(bmi < 25){\n        return \"normal\";\n    } else {\n        return \"obese\";\n    }\n}\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//for arrays we are going to use '[ ]' this symbol\n// start with 0,1,2,3,4,.....\nlet fruits = \"durian\"\nconsole.log(fruits[5])"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "n",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# string operations\n1. u can slice the string\n2. convert it to upper/lower case"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let favouriteAnimal = \"ponies\"\nconsole.log(favouriteAnimal.slice(1,4))"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "oni",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// toUpperCase(): create a copy of string and convert to uppercase\nconsole.log(favouriteAnimal.toUpperCase())"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "PONIES",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// includes: check if a string includes another smaller string\nconsole.log(\"JavaScript\".includes(\"Java\"))"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "true",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log"
+            ],
+            "outputs": []
+        }
+    ]
+}

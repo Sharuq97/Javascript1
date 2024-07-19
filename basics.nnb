@@ -1,0 +1,11 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "{\n    id: 3\n    title: \"Narnia\"\n    popularity: 4\n}\n\nlet todos = [\n    {\n        id: 1,\n        title: \"Avengers\",\n        popularity: 5 //1 is least popular, 5 being the most\n    },\n   \n];"
+            ],
+            "outputs": []
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# The different data types so far\n1. Primitive data types\n    - Numbers (integers, floats)\n    - Strings\n    - Boolean values (`true` or `false`)\n2. Reference Data Types\n    - Arrays\n    - Objects\n    - Functions (not impt for now)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let person = {\n    name: \"Sharuq\",\n    age: \"27\"\n// <key>:<value of key>\n}; //`{}` defines an object, not a scope for this section\n// the variable 'person' contains a name and age\n\nconsole.log(person.age)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "27",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//use array as an association mapping\n//know how many days per month\nlet months = {\n    \"jan\": 31,\n    \"feb\": 28,\n    \"mar\": 31,\n    \"apr\": 30\n}\nconsole.log(months.feb)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "28",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let receipe = {\n    \"Name\": \"Parotta\",\n    \"Ingredients\": [\"Maida\",\"Egg\",\"Ghee\"],\n    \"Nutrients\": {\n        \"Calories\": 250,\n        \"Fat\": 12,\n        \"Carbohydrates\": 28\n\n    }\n}\nconsole.log(receipe.Nutrients)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "{ Calories: 250, Fat: 12, Carbohydrates: 28 }",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "console.log(receipe.Nutrients.Fat)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "12",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//add new key to existing object\nreceipe.servesHowMany = 4;\nconsole.log(receipe);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "{",
+                                "  Name: 'Parotta',",
+                                "  Ingredients: [ 'Maida', 'Egg', 'Ghee' ],",
+                                "  Nutrients: { Calories: 250, Fat: 12, Carbohydrates: 28 },",
+                                "  servesHowMany: 4",
+                                "}",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "//delete a key in an existing receipe\ndelete receipe.servesHowMany;\nconsole.log(receipe);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "{",
+                                "  Name: 'Parotta',",
+                                "  Ingredients: [ 'Maida', 'Egg', 'Ghee' ],",
+                                "  Nutrients: { Calories: 250, Fat: 12, Carbohydrates: 28 }",
+                                "}",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# combine arrays with objects to create a simple database\n* Each element in an array represents one record\n* Each record is represented by an object"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "let filmsDatabase = [\n    {\n        id: 1,\n        name: \"Avengers\",\n        year: 2010\n    },\n    {\n        id: 2,\n        name: \"Ironman\",\n        year: 2005\n    },\n    {\n        id: 3,\n        name: \"Spiderman\",\n        year: 2002\n    }\n]"
+            ],
+            "outputs": []
+        }
+    ]
+}
